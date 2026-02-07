@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Antariksh | Discoveries</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background Video -->
+  <div class="video-bg">
+    <video autoplay muted loop playsinline>
+      <source src="c:\Users\Om Kayarkar\Downloads\214005.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="brand">
+      <div class="logo-placeholder">LOGO</div>
+      <div>
+        <h1>ANTARIKSH</h1>
+        <p>The Astronomy Club</p>
+      </div>
+    </div>
+
+    <nav>
+      <a href="Antariksh.html">Home</a>
+      <a href="timeline.html">Timeline</a>
+      <a class="active" href="discoveries.html">Discoveries</a>
+            <a href="upcoming.html">Upcoming</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero small">
+      <h2>Major Space Discoveries</h2>
+      <p>Hover and click cards to explore discoveries .</p>
+    </section>
+
+    
+
+    <section class="section cards" id="discoveryCards"></section>
+  </main>
+
+
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button class="close" onclick="closeModal()">✖</button>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDate"></p>
+      <p id="modalDesc"></p>
+    </div>
+  </div>
+
+  <!-- Slider -->
+    <section class="section">
+      <h3>Discovery Gallery </h3>
+      <div class="slider" data-slider="discoveries">
+        <div class="slides">
+          <div class="slide active">
+            <img src="https://images.squarespace-cdn.com/content/v1/55a676ebe4b0e7324c26d410/c3fd0e07-c237-47e0-a037-405a71425255/2024exo3.jpg?format=1000w" alt="Discovery 1" />
+            <div class="caption">Exoplanets - Worlds beyond</div>
+          </div>
+          <div class="slide">
+            <img src="https://static01.nyt.com/images/2019/04/10/science/10BLACKHOLEPHOTO/10BLACKHOLEPHOTO-superJumbo-v3.jpg" alt="Discovery 2" />
+            <div class="caption">Black Hole Image - 2019</div>
+          </div>
+          <div class="slide">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDWeqcaUIcAJHAdkAQ3hg7I-7iPGdc21smzA&s" alt="Discovery 3" />
+            <div class="caption">Gravitational Waves</div>
+          </div>
+        </div>
+
+        <button class="nav-btn prev">❮</button>
+        <button class="nav-btn next">❯</button>
+        <div class="dots"></div>
+
+        <div class="progress">
+          <div class="progress-bar"></div>
+        </div>
+      </div>
+    </section>
+
+      <footer class="footer">© 2026 Antariksh Astronomy Club</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
